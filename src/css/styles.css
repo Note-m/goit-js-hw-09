@@ -1,0 +1,113 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+.gallery {
+  display: flex;
+  gap: 24px 24px;
+  flex-wrap: wrap;
+  min-width: 1128px;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+.gallery-image:hover {
+  border: 1px solid #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.045);
+  transition: transform 300ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+/* task 2 */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 24px;
+  padding-left: 24px;
+}
+.label {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  font-family: var(--font-family);
+
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.button-task-four {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 0;
+  margin-top: 16px;
+}
+.button-task-four:hover {
+  background: #6c8cff;
+}
+.input-task-four {
+  width: 360px;
+  height: 40px;
+}
+.email {
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.message {
+  height: 80px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.email:hover {
+  border: 1px solid black;
+}
+.message:hover {
+  border: 1px solid black;
+}
